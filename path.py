@@ -29,15 +29,22 @@ def change_dir():
         print(f"[-] Directory not found")
 
 def create_dir():
-    new_dir = new_dir = f"{path}/my_dir"
+
+    name_dir = input('Type the name of the new directory: ')
+    if name_dir == '':
+        print(Fore.RED +'[!]'+ Fore.RESET +' you should type something')
+        return
+    
+    new_dir = new_dir = f"{path}/{name_dir}"
     os.makedirs(new_dir, exist_ok=True)
 
     if os.path.exists(new_dir): 
-        print(Fore.CYAN + Style.BRIGHT + "[+] Directory created succesfully")
-    else:
-        print(Fore.RED + "[-]" + " directory not created")
-
-
+        print(Fore.CYAN + Style.BRIGHT + "[+] Directory created succesfully" + Fore.RESET)
+        for dir in os.listdir('.'):
+            if dir == name_dir:
+                print(Fore.YELLOW + dir)
+            else: print(dir)
+    else: print(Fore.RED + "[-] directory not created")
 
 def main():
     subprocess.run(['clear'])
