@@ -30,7 +30,7 @@ def change_dir():
 
 def create_dir():
 
-    name_dir = input('Type the name of the new directory: ').strip()
+    name_dir = input('Type the name of the new directory: ').strip() # removes any spaces from a string
     if name_dir == '':
         print(Fore.RED +'[!]'+ Fore.RESET +' you should type something')
         return
