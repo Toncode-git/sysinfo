@@ -5,7 +5,9 @@ Interactive program that interacts directly with the os handling file and direct
 1. Colorama
 
 before running you will need to execute the setup file
-```
-pip install --upgrade pip
+```bash
+git clone https://github.com/toncode-git/sysinfo
+cd sysinfo
 pip install -e . --break-system-packages
+sysinfo
 ```

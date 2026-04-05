@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "sysinfo=sysinfo.core:main"
+            "sysinfo=sysinfo.path:main"
         ]
     },
     python_requires=">=3.8"
