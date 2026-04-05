@@ -1,9 +1,9 @@
-import platform
+''''import platform
 import os
 import argparse
 import subprocess
 
-'''def getOsInfo():
+def getOsInfo():
     try:
         return {
             "system" : platform.system(),
@@ -15,7 +15,7 @@ import subprocess
         }
     except Exception as e:
         print(f"[-]Error: {type}(e)")
-'''
+
 
 class Logger:
     def __init__(self, name):
@@ -44,3 +44,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    '''
